@@ -1,11 +1,14 @@
 
-# Ejercicios de Programación Python
+# coding: utf-8
+
+# # Ejercicios de Programación Python
+# 
+
+# 1- Definir una función max() que tome como argumento dos números y devuelva el mayor de ellos.
+
+# In[1]:
 
 
-1- Definir una función max() que tome como argumento dos números y devuelva el mayor de ellos.
-
-
-```python
 def max(a,b):
     if a > b:
         return a
@@ -13,19 +16,13 @@ def max(a,b):
         return b
     
 max(2,5)
-```
 
 
+# 2- Definir una función max_de_tres(), que tome tres números como argumentos y devuelva el mayor de ellos. 
+
+# In[2]:
 
 
-    5
-
-
-
-2- Definir una función max_de_tres(), que tome tres números como argumentos y devuelva el mayor de ellos. 
-
-
-```python
 def max_de_tres(a,b,c):
     if a > b and a > c:
         return a
@@ -35,19 +32,13 @@ def max_de_tres(a,b,c):
         return c
 
 max_de_tres(5,3,7)
-```
 
 
+# 3- Definir una función que calcule la longitud de una lista o una cadena dada. 
+
+# In[3]:
 
 
-    7
-
-
-
-3- Definir una función que calcule la longitud de una lista o una cadena dada. 
-
-
-```python
 def len_cadena(string):
     cont = 0
     for i in string:
@@ -55,19 +46,13 @@ def len_cadena(string):
     return cont
 
 len_cadena("Hola Mundo")
-```
 
 
+# 4- Escribir una función que tome un carácter y devuelva True si es una vocal, de lo contrario devuelve False.
+
+# In[5]:
 
 
-    10
-
-
-
-4- Escribir una función que tome un carácter y devuelva True si es una vocal, de lo contrario devuelve False.
-
-
-```python
 def is_vocal(char):
     lista_vocales = ['a','e','i','o','u']
     for vocales in lista_vocales:
@@ -76,19 +61,13 @@ def is_vocal(char):
     return False
 
 is_vocal('r')
-```
 
 
+# 5- Escribir una funcion sum() y una función multip() que sumen y multipliquen respectivamente todos los números de una lista.
+
+# In[10]:
 
 
-    False
-
-
-
-5- Escribir una funcion sum() y una función multip() que sumen y multipliquen respectivamente todos los números de una lista.
-
-
-```python
 def sum(lista):
     suma = 0
     for num in lista:
@@ -102,19 +81,13 @@ def multip(lista):
     return mult
 
 multip([1,4,5])
-```
 
 
+# 6- Definir una función inversa() que calcule la inversión de una cadena.
+
+# In[12]:
 
 
-    20
-
-
-
-6- Definir una función inversa() que calcule la inversión de una cadena.
-
-
-```python
 def inversa(string):
     invertida = ""
     cont = len_cadena(string)
@@ -126,19 +99,13 @@ def inversa(string):
     return invertida
 
 inversa("Luis")
-```
 
 
+# 7- Definir una función es_palindromo() que reconoce palíndromos (es decir, palabras que tienen el mismo aspecto escritas invertidas)
+
+# In[ ]:
 
 
-    'siuL'
-
-
-
-7- Definir una función es_palindromo() que reconoce palíndromos (es decir, palabras que tienen el mismo aspecto escritas invertidas)
-
-
-```python
 def es_palindromo(string):
     palabra_in = inversa(string)
     indice = 0
@@ -154,12 +121,13 @@ def es_palindromo(string):
             
     if count == len_cadena():
         print("Es palindromo")
-```
-
-8- Definir una función superposicion() que tome dos listas y devuelva True si tienen al menos 1 miembro en común o devuelva False de lo contrario. Escribir la función usando el bucle for anidado. 
 
 
-```python
+# 8- Definir una función superposicion() que tome dos listas y devuelva True si tienen al menos 1 miembro en común o devuelva False de lo contrario. Escribir la función usando el bucle for anidado. 
+
+# In[14]:
+
+
 def superposicion(lista1, lista2):
     for num in lista1:
         for x in lista2:
@@ -168,48 +136,27 @@ def superposicion(lista1, lista2):
     return False
 
 superposicion([1,2,3],[1,4,5])
-```
 
 
+# 9- Definir una función generar_n_caracteres() que tome un entero n y devuelva el caracter multiplicado por n. Por ejemplo: generar_n_caracteres(5, "x") debería devolver "xxxxx".
+
+# In[16]:
 
 
-    True
-
-
-
-9- Definir una función generar_n_caracteres() que tome un entero n y devuelva el caracter multiplicado por n. Por ejemplo: generar_n_caracteres(5, "x") debería devolver "xxxxx".
-
-
-```python
 def generar_n_caracteres(n, char):
     return n * char
 
 generar_n_caracteres(5, "w")
-```
 
 
+# 10- Definir un histograma procedimiento() que tome una lista de números enteros e imprima un histograma en la pantalla. 
+
+# In[18]:
 
 
-    'wwwww'
-
-
-
-10- Definir un histograma procedimiento() que tome una lista de números enteros e imprima un histograma en la pantalla. 
-
-
-```python
 def procedimiento(lista):
     for i in lista:
         print(i*"X")
         
 procedimiento([1,4,5,6,8,10,12])
-```
 
-    X
-    XXXX
-    XXXXX
-    XXXXXX
-    XXXXXXXX
-    XXXXXXXXXX
-    XXXXXXXXXXXX
-    
